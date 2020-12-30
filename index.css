@@ -1,0 +1,88 @@
+body{
+    background-color: rgba(94, 102, 255,0.9);
+}
+.navbar{
+    background-color: rgb(54, 54, 54);
+}
+.nav-list{
+    display: inline;
+    list-style-type: none;
+    float: left;
+    margin-right: 5px;
+}
+
+.logo{
+    width: 20px;
+    padding: 1px;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+#logo-name{
+    color: #ebffff;
+    text-shadow: 2px 0 0 black ;
+}
+.title{
+    margin-top: 70px;
+    text-align: center;
+}
+.form{
+    margin-left: 20px;
+    margin-top: 30px;
+    padding: 3px;
+}
+.forms input,.forms select{
+    width: 40vw !important;
+    margin: auto;
+}
+
+.input{
+
+    font-size: smaller !important;
+}
+.input-box{
+    margin-left: 1vw;
+}
+.text-box{
+    width: 40vw !important;
+    margin: auto;
+    margin-left: 26.5vw;
+    background-color: transparent !important;
+}
+.button{
+    width: 20vw !important;
+    margin-left: 13vw;
+}
+.formStyles{
+    background-color: rgba(54, 54, 54,0.8);
+    color: white;
+    background-position: center;
+    padding: 1.5em;
+    font-size: 1.2vw;
+    width: 50vw;
+    margin: auto;
+    border-radius: 20px;
+}
+.p-2{
+    font-size: 16px;
+}
+
+.form::placeholder{
+    font-size: smaller;
+}
+::-webkit-input-placeholder{
+    font-size: 1.1vw;
+}
+select{
+    font-size: 1.1vw !important;
+    font-weight: lighter !important;
+    padding-left: .5% !important; 
+}
+input[type=checkbox]{
+    margin-bottom: 5px !important;
+}
+.check-box{
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1rem;    
+}
