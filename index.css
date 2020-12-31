@@ -1,5 +1,7 @@
 body{
-    background-color: rgba(94, 102, 255,0.9);
+    background-image: linear-gradient(45deg, #4592ff, #ff45fc,#fff645);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .navbar{
     background-color: rgb(54, 54, 54);
@@ -31,24 +33,16 @@ body{
     margin-top: 30px;
     padding: 3px;
 }
-.forms input,.forms select{
+.forms input{
     width: 40vw !important;
     margin: auto;
 }
 
 .input{
-
     font-size: smaller !important;
 }
-.input-box{
-    margin-left: 1vw;
-}
-.text-box{
-    width: 40vw !important;
-    margin: auto;
-    margin-left: 26.5vw;
-    background-color: transparent !important;
-}
+
+
 .button{
     width: 20vw !important;
     margin-left: 13vw;
@@ -58,31 +52,28 @@ body{
     color: white;
     background-position: center;
     padding: 1.5em;
-    font-size: 1.2vw;
-    width: 50vw;
+    font-size: 14px;
+    width: 50%;
     margin: auto;
     border-radius: 20px;
+
 }
 .p-2{
     font-size: 16px;
 }
 
-.form::placeholder{
-    font-size: smaller;
-}
-::-webkit-input-placeholder{
-    font-size: 1.1vw;
-}
-select{
-    font-size: 1.1vw !important;
-    font-weight: lighter !important;
-    padding-left: .5% !important; 
-}
-input[type=checkbox]{
-    margin-bottom: 5px !important;
+
+
+.forms{
+    padding-right: 20vw;
 }
 .check-box{
-    margin-right: 0.625rem;
-    min-height: 1.25rem;
-    min-width: 1rem;    
+    margin-left: -2vw;
+    padding: 2px;
+    margin-top: 1.2vh;
 }
+.error{
+    color: #ff4538;
+    text-align: center;
+}
+
