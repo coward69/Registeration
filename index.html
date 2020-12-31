@@ -7,8 +7,10 @@
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="./index.js"></script>
     </head>
     <body>
+        <div class="container-fluid col-md-12">
         <div class="header">
             <div class = "navbar mr-auto fixed-top">
             <div class="navbar-header">
@@ -25,69 +27,40 @@
                 <h1>Demo Survey Form</h1>
                 <p>Arigato gosaimas for viewing this page</p>
             </div>
-            <form>
+            <form autocomplete="off" onsubmit="return myfunc()" action="#">
                 <div class="formStyles">
             <div class="forms">
             <div class="form-group form">
-            <label for="name">Name </label>
-            <br><input type="text" name="name" id="name" class="form-control" placeholder="Full Name">
+            <label for="name">First Name </label>
+            <br><input type="text" name="name" id="name"  class="form-control"  placeholder="First Name">
+            <span id="nameError" class="error"></span>
+        </div>
+        <div class="form-group form">
+            <label for="lname">Last Name </label>
+            <br><input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name">
+            <span id="lnameError" class="error"></span>
         </div>
         <div class="form-group form">
             <label for="email">Email</label><br>
             <input type="email" name="email" id="email" class="form-control" placeholder="email@something.com">
+            <span id="emailError" class="error"></span>
+        </div>
+       <!-- <div class="form-group form">
+            <label for="age">Dob</label><br>
+            <input type="date" name="age" id="age" class="form-control" placeholder="Choose Dob">
+            <span id="ageError" class="error"></span>
+        </div>-->
+        <div class="form-group form">
+            <label for="pass">Choose a password</label>
+            <input type="password" name="pass" id="pass" class="form-control">
+            <span id="passError" class="error"></span>
         </div>
         <div class="form-group form">
-            <label for="age">Age(optional)</label><br>
-            <input type="number" name="age" id="age" min = "5" max= "70" class="form-control" placeholder="Age">
+            <label for="pass">confirm password</label>
+            <input type="password" name="pass" id="pass" class="form-control">
+            <span id="pass2Error" class="error"></span>
         </div>
-        <div class="form-group form">
-            <label for="options-1">What option describes your current role?</label>
-            <select class="form-control" id="options-1">
-                <option value="">Select current role</option>
-                <option value="">Student</option>
-                <option value="">Full time job</option>
-                <option value="">Full time learner</option>
-                <option value="">Prefer not to say</option>
-                <option value="">Other</option>
-            </select>
-        </div>
-        <div class="form-group form">
-            <label for="options-2">What's your favourite anime? </label>
-            <select class="form-control" id="options-2">
-                <option value="" >Select</option>
-                <option value="">Attack on Titan</option>
-                <option value="">Full Metal Alchemist : Brotherhood</option>
-                <option value="">Naruto</option>
-                <option value="">One Piece</option>
-                <option value="">Death Note</option>
-                <option value="">Other</option>
-            </select>
-        </div>
-    </div>
-    <div class="form-group form ">
-        <div class="d-flex-md flex-column">
-            <div class="p-2">Which of these openings have you heard?</div>
-            <div class="form-check input-box">
-                <input type="checkbox" class="form-check-input check-box" name = "cb1">
-                <label for="cb1" class="form-check-label"> Shinzou Wo Sasageyo </label>
-            </div>
-            <div class="form-check input-box">
-                <input type="checkbox" class="form-check-input check-box" name = "cb1">
-                <label for="cb1" class="form-check-label"> Again - Yui </label>
-            </div>
-            <div class="form-check input-box">
-                <input type="checkbox" class="form-check-input check-box" name = "cb1">
-                <label for="cb1" class="form-check-label"> Guren no Yumia </label>
-            </div>
-            <div class="form-check input-box">
-                <input type="checkbox" class="form-check-input check-box" name = "cb1">
-                <label for="cb1" class="form-check-label"> Gurenge </label>
-            </div>
-        </div>
-    </div>
-    <div class="form-group form text-box formStyles">
-        <label for="txt">Any Comments or Suggestions?</label>
-        <textarea name="txt" class="form-control" id="txt" rows="3" placeholder="(optional)"></textarea>
+        
     </div>
     <div >
         <button class="btn btn-primary button" type="submit"> Submit </button>
@@ -96,6 +69,7 @@
 </form>
 </div>
         </main>
-        <br><br>
-    </body>
+<br><br>
+</div>
+</body>
 </html>
