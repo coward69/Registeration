@@ -3,48 +3,54 @@
     <head>
         <title>Survey Form</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="./css/index.css">
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="./index.js"></script>
+        <script type="text/javascript" src="./js/index.js"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
-    </head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">   
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="./js/showpass.js"></script>
+</head>
     <body>
         <div class="container-fluid col-md-12">
         <div class="header">
             <div class = "navbar mr-auto fixed-top">
             <div class="navbar-header">
-                <a href="#" class="navbar-brand nav-link" id="logo-name">Survey Form</a>
+                <a href="#" class="navbar-brand nav-link" id="logo-name" style="font-family: 'Monoton', cursive;">DRUMSTICKS</a>
             </div>
-                <ul class="nav navbar-nav navbar-right" style="display: inline;"> <span>
-                <li class="nav-item nav-list"><button class="btn btn-success" style="margin-right:4px;"><span style="text-shadow: 2px 0 2px black;">Sign Up</span></button></li>
-                <li class="nav-item nav-list"><button class="btn btn-secondary"><span style="text-shadow: 2px 0 2px black;">Log In</span></li></span>
+                <ul class="nav navbar-nav navbar-right" style="display: inline;">
+                      <li class="nav-item nav-list"><span class="have">Already have an account?</span></li></span>
+                <li class="nav-item nav-list"><button class="btn btn-link" style="margin-right:4px;"><span style="text-shadow: 2px 0 2px black;">Login</span></button></li>
+               
             </ul>
             </div>
         </div>
         <main>
             <div class="title">
-                <h1 style="font-family: 'Redressed', cursive;font-family: 'Redressed', cursive; font-weight: bold;" >Welcome</h1>
+                <h1 style="font-family: 'Redressed', cursive;font-family: 'Redressed', cursive; font-weight: bold;" >make an account</h1>
                <br>
             </div>
             <div>
-                <img class="image" src="./images/undraw_mobile_login_ikmv.svg" alt="image">
+                <img class="image" src="./images/undraw_world_9iqb.svg" alt="image">
             </div>
-            <form autocomplete="off" onsubmit="return myfunc()" action="#">
+            <form autocomplete="off"  action="#" onsubmit="return myfunc()">
                 <div class="formStyles">
             <div class="forms">
+                
             <div class="form-group form">
-            <input type="text" name="name" id="name" pattern="[A-Za-z]{ }" class="form-control"  placeholder="First Name">
+            <input type="text" name="name" id="name"  pattern="[A-Za-z]{2,20}" class="form-control" title="name should consist only of alphabets and should be of more than 2 and less than 20 characters" placeholder="First Name">
             <span id="nameError" class="error"></span>
         </div>
         <div class="form-group form">
-            <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name">
+            <input type="text" name="lname" id="lname" pattern="[A-Za-z]{2,20}" class="form-control" placeholder="Last Name">
             <span id="lnameError" class="error"></span>
         </div>
         <div class="form-group form">
-            <input type="email" name="email" id="email" class="form-control" placeholder="email@something.com">
+            <input type="email" name="email" id="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="email@something.com" title="The email should be in the format of 'something@email.com'">
             <span id="emailError" class="error"></span>
         </div>
        <!-- <div class="form-group form">
@@ -53,18 +59,24 @@
             <span id="ageError" class="error"></span>
         </div>-->
         <div class="form-group form">
-            <input type="password" name="pass" id="pass" placeholder="password" class="form-control">
+            <input type="password" title = "password should be of minimum 8 characters, with atleast one number and one alphabet" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" name="pass" id="pass" placeholder="password" class="form-control">
+            </div>
             <span id="passError" class="error"></span>
         </div>
         <div class="form-group form">
-            <input type="password" placeholder="confirm password" name="pass" id="pass" class="form-control">
+            <input type="password" placeholder="confirm password" name="pass2" id="pass2" class="form-control">
             <span id="pass2Error" class="error"></span>
-        </div>
+            <!--<div class="showpass">
+                <input type="checkbox" onclick="showpass()" name="checkbox" id="checkbox" class="form-check-input"> <label class="show" for="defaultCheck1">
+                    <i class="fa fa-eye"></i>
+                    show password 
+                 </label>
+        </div>-->
         
     </div>
     <br>
     <div >
-        <button class="btn btn-primary button" type="submit"> Submit </button>
+        <button class="btn btn-warning button" type="submit"> SUBMIT </button>
     </div>
 </div>
 </form>

@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(45deg, #4592ff, #ff45fc,#fff645);
+    background-image: linear-gradient(45deg, #4592ff, white , #ff45fc);
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 60px;
@@ -13,7 +13,12 @@ body{
     float: left;
     margin-right: 5px;
 }
-
+.have{
+    position: relative;
+    top: 0.42rem;
+    color:white;
+    text-shadow: 1px 2px 1px black ;
+}
 .logo{
     width: 20px;
     padding: 1px;
@@ -47,6 +52,11 @@ body{
     width: 15vw !important;
     margin-left: 14vw;
 }
+#checkbox{
+   right: -50px;
+    appearance: none ;
+    position: relative;
+}
 .formStyles{
     background-color: rgba(54, 54, 54,0.8);
     color: white;
@@ -58,6 +68,8 @@ body{
     border-radius: 20px;
     float: right;
 margin-bottom: 150px;
+box-shadow: 0px 10px 10px #858585;
+
 }
 .p-2{
     font-size: 16px;
@@ -77,7 +89,22 @@ margin-bottom: 150px;
 }
 .image{
     width: 30%;
-    top: 180px;
+    top: 160px;
     left: 50px;
     position: absolute;
+}
+i{
+    padding:3px;
+    position: relative;
+    float:right;    
+    font-size: smaller;
+}
+.show{
+    padding:2px;
+position: relative;
+right: 25px;
+float:right;
+font-size: 8px;
+    font-weight: lighter;
+    text-shadow: 1px 1px 1px black;
 }

@@ -2,11 +2,12 @@ const myfunc = () =>{
 let firstName = document.getElementById('name').value;
 let lastName = document.getElementById('lname').value;
 let email = document.getElementById('email').value;
-
+let pass = document.getElementById('pass').value;
+let pass2 = document.getElementById('pass2').value;
 //dob--------
 //let dob = document.getElementById('age').value;
 
-if(firstName==null||firstName.length<=2||firstName.length>=20||firstName==!(NaN)){
+if(firstName==null||firstName.length<=2||firstName.length>=20){
     document.getElementById('nameError').style.display = "block";
     document.getElementById('nameError').style.margin = "auto";
     document.getElementById('nameError').innerHTML = "invalid name"
@@ -41,12 +42,28 @@ else{
     document.getElementById('emailError').style.display = "none";
 
 }
-
-
-
-
-
-
+if(pass==""||pass>=6||pass<=15){
+    document.getElementById('passError').style.display = "block";
+    document.getElementById('passError').style.margin = "auto";
+    document.getElementById('passError').innerHTML = "invalid password";
+    document.getElementById('pass').style.border = "groove #F32013 2px ";
+    return false;
+}
+else{
+    document.getElementById('pass').style.border = "groove #42f54e 2px ";
+    document.getElementById('passError').style.display = "none";
+}
+if(pass2!==pass){
+    document.getElementById('pass2Error').style.display = "block";
+    document.getElementById('pass2Error').style.margin = "auto";
+    document.getElementById('pass2Error').innerHTML = "passwords do not match";
+    document.getElementById('pass2').style.border = "groove #F32013 2px ";
+    return false;
+}
+else{
+    document.getElementById('pass2').style.border = "groove #42f54e 2px ";
+    document.getElementById('pass2Error').style.display = "none";
+}
 
 /*
 
@@ -66,3 +83,4 @@ else{
 }*/
 
 }
+
