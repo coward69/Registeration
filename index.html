@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript" src="./index.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="container-fluid col-md-12">
@@ -24,24 +26,24 @@
         </div>
         <main>
             <div class="title">
-                <h1>Demo Survey Form</h1>
-                <p>Arigato gosaimas for viewing this page</p>
+                <h1 style="font-family: 'Redressed', cursive;font-family: 'Redressed', cursive; font-weight: bold;" >Welcome</h1>
+               <br>
+            </div>
+            <div>
+                <img class="image" src="./images/undraw_mobile_login_ikmv.svg" alt="image">
             </div>
             <form autocomplete="off" onsubmit="return myfunc()" action="#">
                 <div class="formStyles">
             <div class="forms">
             <div class="form-group form">
-            <label for="name">First Name </label>
-            <br><input type="text" name="name" id="name"  class="form-control"  placeholder="First Name">
+            <input type="text" name="name" id="name" pattern="[A-Za-z]{ }" class="form-control"  placeholder="First Name">
             <span id="nameError" class="error"></span>
         </div>
         <div class="form-group form">
-            <label for="lname">Last Name </label>
-            <br><input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name">
+            <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name">
             <span id="lnameError" class="error"></span>
         </div>
         <div class="form-group form">
-            <label for="email">Email</label><br>
             <input type="email" name="email" id="email" class="form-control" placeholder="email@something.com">
             <span id="emailError" class="error"></span>
         </div>
@@ -51,17 +53,16 @@
             <span id="ageError" class="error"></span>
         </div>-->
         <div class="form-group form">
-            <label for="pass">Choose a password</label>
-            <input type="password" name="pass" id="pass" class="form-control">
+            <input type="password" name="pass" id="pass" placeholder="password" class="form-control">
             <span id="passError" class="error"></span>
         </div>
         <div class="form-group form">
-            <label for="pass">confirm password</label>
-            <input type="password" name="pass" id="pass" class="form-control">
+            <input type="password" placeholder="confirm password" name="pass" id="pass" class="form-control">
             <span id="pass2Error" class="error"></span>
         </div>
         
     </div>
+    <br>
     <div >
         <button class="btn btn-primary button" type="submit"> Submit </button>
     </div>

@@ -41,6 +41,13 @@ else{
     document.getElementById('emailError').style.display = "none";
 
 }
+
+
+
+
+
+
+
 /*
 
 dob validation

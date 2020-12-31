@@ -2,6 +2,7 @@ body{
     background-image: linear-gradient(45deg, #4592ff, #ff45fc,#fff645);
     background-position: center;
     background-repeat: no-repeat;
+    margin-bottom: 60px;
 }
 .navbar{
     background-color: rgb(54, 54, 54);
@@ -33,8 +34,8 @@ body{
     margin-top: 30px;
     padding: 3px;
 }
-.forms input{
-    width: 40vw !important;
+ input{
+    width: 30vw !important;
     margin: auto;
 }
 
@@ -42,31 +43,26 @@ body{
     font-size: smaller !important;
 }
 
-
 .button{
-    width: 20vw !important;
-    margin-left: 13vw;
+    width: 15vw !important;
+    margin-left: 14vw;
 }
 .formStyles{
     background-color: rgba(54, 54, 54,0.8);
     color: white;
     background-position: center;
-    padding: 1.5em;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     font-size: 14px;
-    width: 50%;
-    margin: auto;
+    width: 40vw;
     border-radius: 20px;
-
+    float: right;
+margin-bottom: 150px;
 }
 .p-2{
     font-size: 16px;
 }
 
-
-
-.forms{
-    padding-right: 20vw;
-}
 .check-box{
     margin-left: -2vw;
     padding: 2px;
@@ -76,4 +72,12 @@ body{
     color: #ff4538;
     text-align: center;
 }
-
+::-webkit-input-placeholder{
+    font-size: smaller;
+}
+.image{
+    width: 30%;
+    top: 180px;
+    left: 50px;
+    position: absolute;
+}
