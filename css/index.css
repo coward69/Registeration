@@ -2,10 +2,13 @@ body{
     background-image: linear-gradient(45deg, #4592ff, white , #ff45fc);
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 60px;
+    overflow-x: hidden;
+}
+main{
+    min-height: 100vh;
 }
 .navbar{
-    background-color: rgb(54, 54, 54);
+    background-color: rgba(54, 54, 54,0.99);
 }
 .nav-list{
     display: inline;
@@ -33,6 +36,19 @@ body{
 .title{
     margin-top: 70px;
     text-align: center;
+}
+footer{
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    padding: 2vh;
+    background-color: rgba(54, 54, 54,0.5);
+    background-size:cover;
+    color: white;
+    text-shadow: 1px 0px 1px  black;
+    margin-left: -200px;
+    margin-right: -200px;
+
 }
 .form{
     margin-left: 20px;
@@ -67,7 +83,6 @@ body{
     width: 40vw;
     border-radius: 20px;
     float: right;
-margin-bottom: 150px;
 box-shadow: 0px 10px 10px #858585;
 
 }
@@ -93,6 +108,7 @@ box-shadow: 0px 10px 10px #858585;
     left: 50px;
     position: absolute;
 }
+
 i{
     padding:3px;
     position: relative;
