@@ -10,3 +10,4 @@ const showpass = () => {
         showpass2.type = "password";
     }
 }
+const showbtn = (x) => x.classList.toggle("fa-eye-slash")
