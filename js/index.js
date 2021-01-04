@@ -65,16 +65,16 @@ else{
     document.getElementById('pass2Error').style.display = "none";
 }
 
-/*
+/*()
 
 dob validation
 
 if(dob == null){
     document.getElementById('dobError').style.display = "block";
-    document.getElementById('dobErro').style.margin = "auto";
+    document.getElementById('dobError').style.margin = "auto";
     document.getElementById('dobError').innerHTML = "invalid email";
     document.getElementById('dob').style.border = "groove #F32013 2px ";
-    return false
+    return false;
 }
 else{
     document.getElementById('dob').style.border = "groove #42f54e 2px ";
