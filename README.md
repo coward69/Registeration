@@ -1,2 +1,2 @@
-# survey-form
+# registeration form
 simple registration page
